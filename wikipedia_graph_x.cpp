@@ -86,9 +86,9 @@ int main(){
   std::cout << "page that I wanna express" << pages.at(aim_index).second << "\n";
   std::vector <std::pair<int, std::string>> related_all;
   for (int i = 0; i < links_eachother.at(aim_index).size(); i++) {
-    int one_ring_index = links_eachother.at(aim_index).at(i);
+    int one_ring_index = links_eachother.at(aim_index).at(i);//‚Ë‚ç‚¢‚Ì‘ŠŒÝƒŠƒ“ƒN
     for (int j = 0;j < links_eachother.at(one_ring_index).size(); j++) {
-      int two_ring_index = links_eachother.at(one_ring_index).at(j);
+      int two_ring_index = links_eachother.at(one_ring_index).at(j);//‚Ë‚ç‚¢‚Ì‘ŠŒÝƒŠƒ“ƒN‚Ì‘ŠŒÝƒŠƒ“ƒN
       for (int k = 0; k < links_eachother.at(two_ring_index).size(); k++) {
 	if (links_eachother.at(two_ring_index).at(k) == aim_index) {
 	  related_all.push_back(pages.at(two_ring_index));
